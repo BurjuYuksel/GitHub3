@@ -1,0 +1,69 @@
+
+
+TestNG review Class1;
+
+1-
+2-
+3-
+4-What is maven?
+5-Maven is a build automation tool that help us manage dependencies,
+6-create project structure/hierarchy
+7-and execute our test cases
+8-Maven can be used primary  with java applications,but  can also work in other languages
+9-
+10-How does maven manages the dependencies?
+11-Maven has a central repository where we have all the jar files instead of adding them manually we can simply add them
+in our
+12-POM.xml file and maven takes care of it automatically
+
+what is TestNg?
+Testing automation Framework
+
+annotations:
+1-@Test ==> marks the method as test method
+2-@Before ==> preconditions(suite,test,method,class)
+ 3-@After Method-it executes after every test as a post condition
+
+@BeforeClass-it executes once before the class executes
+@AfterClass-it executes after the class executes
+
+Testng attributes-
+priority -by default priority is set to 0
+enabled- by default every Tc true ,if we need to exclude TC WE HAVE TO SET THIS TO FALSE
+
+Assertion is of 2 types-
+Hard Assertion- the moment it finds an error, it stops execution and gives us the break point .
+
+what is our xml file?
+Configuration file for testNG
+
+<suite>
+<test>
+      <classes>
+       <class name=" ">
+           < methods>
+             </methods>
+        </classes>
+              </test>
+
+        <test>
+           <classes>
+       </classes>
+</test>
+   </suite>
+
+DataDriben testing:
+it is just a concept in which we
+test the same functionality against different set of Data
+
+to write the code is a manner that if data cahnges it does not effect the source code
+
+@DtaProvider in testNg to implement dot
+two steps:
+1.we have a method that returns an object of 2D array
+2. call dataProvider method to te st  what ever we need
+
+Assertions in TestNG:
+
+1-Hard Assertions==>Assert class==> stops the execution once it
+2.soft assertion==>
